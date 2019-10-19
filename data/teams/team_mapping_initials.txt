@@ -1,0 +1,14 @@
+{
+'Anthony': 'AT',
+'Kory': 'KM',
+'Matthew': 'MH',
+'beau': 'BM',
+'Patrick': 'PP',
+'michael': 'MS',
+'Erik': 'EM',
+'Spencer': 'SN',
+'Blake': 'BW',
+'Jarrod': 'JR',
+'Terry': 'T',
+'Chase': 'CS'
+}
