@@ -55,7 +55,7 @@ with open('../teams/team_mapping_full.txt', 'r') as f:
 
 ##### LOOP THROUGH ALL WEEKS, TEAMS, AND PLAYERS #####
 #for week in range(1, 2): # TEST
-for week in range(4, rosters['num_weeks']+1): #16 weeks total
+for week in range(6, rosters['num_weeks']+1): #16 weeks total
     df_wk_roster = pd.DataFrame(index = new_index)
     df_wk_points = pd.DataFrame(index = new_index)
 
@@ -116,7 +116,6 @@ for week in range(4, rosters['num_weeks']+1): #16 weeks total
             # URL to get player points each week from Yahoo API
             url = 'https://fantasysports.yahooapis.com/fantasy/v2/league/390.l.182974/players;player_keys='+str(player_key)+'/stats;type=week;week='+str(week)
             response = oauth.session.get(url, params={'format': 'json'})
-            print(response.text)
             player_points_json = response.json()
             player_points = float(player_points_json['fantasy_content']['league'][1]['players']['0']['player'][1]['player_points']['total'])
 
